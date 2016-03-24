@@ -1,0 +1,213 @@
+libglui_a-glui_edittext.o: glui/glui_edittext.cpp \
+  glui/glui_internal_control.h glui/GL/glui.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glut.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/freeglut_std.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/gl.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glext.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stddef.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/inttypes.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdint.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glu.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstdlib \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/unistd.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/posix.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/errno.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/errno.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstdio \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstring \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/strings.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/string \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/iosfwd \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/wchar.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/wchar.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cwchar \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cwctype \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cctype \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/ctype.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/ctype.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/wctype.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/wctype.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/algorithm \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/initializer_list \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstddef \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/type_traits \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/utility \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__tuple \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__tuple_03 \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/memory \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/typeinfo \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/exception \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstdint \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/new \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/limits \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__undef_min_max \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/iterator \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__functional_base \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__functional_base_03 \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__debug \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/tuple \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/stdexcept \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/vector \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__bit_reference \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/climits \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/limits.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/limits.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__split_buffer \
+  glui/glui_internal.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cmath \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cassert \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h
+
+glui/glui_internal_control.h:
+
+glui/GL/glui.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glut.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/freeglut_std.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/gl.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glext.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stddef.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/inttypes.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdint.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glu.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstdlib:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/unistd.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/posix.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/errno.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/errno.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstdio:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstring:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/strings.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/string:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/iosfwd:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/wchar.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/wchar.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cwchar:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cwctype:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cctype:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/ctype.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/ctype.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/wctype.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/wctype.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/algorithm:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/initializer_list:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstddef:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/type_traits:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/utility:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__tuple:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__tuple_03:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/memory:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/typeinfo:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/exception:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstdint:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/new:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/limits:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__undef_min_max:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/iterator:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__functional_base:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__functional_base_03:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__debug:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/tuple:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/stdexcept:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/vector:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__bit_reference:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/climits:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/limits.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/limits.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__split_buffer:
+
+glui/glui_internal.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cmath:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cassert:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h:

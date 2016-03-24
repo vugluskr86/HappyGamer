@@ -1,0 +1,49 @@
+libconvexdecomposition_a-cd_hull.o: ConvexDecomposition/cd_hull.cpp \
+  ConvexDecomposition/float_math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/strings.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/float.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/float.h \
+  ConvexDecomposition/cd_hull.h
+
+ConvexDecomposition/float_math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/strings.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/float.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/float.h:
+
+ConvexDecomposition/cd_hull.h:

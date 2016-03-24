@@ -1,0 +1,22 @@
+The C compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out.js.map"
+
+The C compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out.js"
+
+The C compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.o"
+
+The C compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out.js.map"
+
+The C compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out.js"
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+ERROR:root:[31mno input files
+note that input files without a known suffix are ignored, make sure your input files end with one of: ('.c', '.C', '.i', '.cpp', '.cxx', '.cc', '.c++', '.CPP', '.CXX', '.CC', '.C++', '.ii', '.m', '.mi', '.mm', '.mii', '/dev/null', '.bc', '.o', '.obj', '.lo', '.dylib', '.so', '.a', '.ll', '.h', '.hxx', '.hpp', '.hh', '.H', '.HXX', '.HPP', '.HH')[0m
+The CXX compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out.js.map"
+
+The CXX compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out.js"
+
+The CXX compiler identification could not be found in "/home/vugluskr/projects/HappyGamer/build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+ERROR:root:[31mno input files
+note that input files without a known suffix are ignored, make sure your input files end with one of: ('.c', '.C', '.i', '.cpp', '.cxx', '.cc', '.c++', '.CPP', '.CXX', '.CC', '.C++', '.ii', '.m', '.mi', '.mm', '.mii', '/dev/null', '.bc', '.o', '.obj', '.lo', '.dylib', '.so', '.a', '.ll', '.h', '.hxx', '.hpp', '.hh', '.H', '.HXX', '.HPP', '.HH')[0m

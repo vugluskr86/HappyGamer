@@ -1,0 +1,13 @@
+https://github.com/kripken/emscripten
+https://www.opengl.org/wiki/Object_Mouse_Trackball
+http://gamedev.stackexchange.com/questions/53333/how-to-implement-a-basic-arcball-camera-in-opengl-with-glm
+http://computergraphics.stackexchange.com/questions/151/how-to-implement-a-trackball-in-opengl
+https://github.com/RichieSams/thehalflingproject/blob/master/source/scene/camera.h
+https://en.wikibooks.org/wiki/OpenGL_Programming/Modern_OpenGL_Tutorial_Arcball
+http://lazyfoo.net/SDL_tutorials/lesson09/
+https://github.com/jpd002/Palleon/blob/master/build_html5/CMakeLists.txt
+http://eax.me/opengl-model-view-projection/
+https://github.com/mortennobel/emscripten-cubes
+https://github.com/joshb/shadowvolumes/blob/master/scene.c
+http://joshbeam.com/articles/stenciled_shadow_volumes_in_opengl/
+https://kripken.github.io/emscripten-site/docs/getting_started/Tutorial.html

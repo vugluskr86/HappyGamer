@@ -1,0 +1,92 @@
+GLDebugDrawer.o: GLDebugDrawer.cpp GLDebugDrawer.h \
+  ../../src/LinearMath/btIDebugDraw.h ../../src/LinearMath/btVector3.h \
+  ../../src/LinearMath/btScalar.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/float.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/float.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h \
+  ../../src/LinearMath/btMinMax.h \
+  ../../src/LinearMath/btAlignedAllocator.h \
+  ../../src/LinearMath/btTransform.h ../../src/LinearMath/btMatrix3x3.h \
+  ../../src/LinearMath/btQuaternion.h ../../src/LinearMath/btQuadWord.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  GLDebugFont.h GlutStuff.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/gl.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glext.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stddef.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/inttypes.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdint.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glut.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/freeglut_std.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glu.h
+
+GLDebugDrawer.h:
+
+../../src/LinearMath/btIDebugDraw.h:
+
+../../src/LinearMath/btVector3.h:
+
+../../src/LinearMath/btScalar.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/float.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/float.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h:
+
+../../src/LinearMath/btMinMax.h:
+
+../../src/LinearMath/btAlignedAllocator.h:
+
+../../src/LinearMath/btTransform.h:
+
+../../src/LinearMath/btMatrix3x3.h:
+
+../../src/LinearMath/btQuaternion.h:
+
+../../src/LinearMath/btQuadWord.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+GLDebugFont.h:
+
+GlutStuff.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/gl.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glext.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stddef.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/inttypes.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdint.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/stdint.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glut.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/freeglut_std.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/GL/glu.h:

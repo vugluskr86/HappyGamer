@@ -1,0 +1,397 @@
+Bullet-C-API.lo: BulletDynamics/Dynamics/Bullet-C-API.cpp Bullet-C-Api.h \
+  btBulletDynamicsCommon.h btBulletCollisionCommon.h \
+  BulletCollision/CollisionDispatch/btCollisionWorld.h \
+  LinearMath/btVector3.h LinearMath/btScalar.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/float.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/float.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h \
+  LinearMath/btMinMax.h LinearMath/btAlignedAllocator.h \
+  LinearMath/btTransform.h LinearMath/btMatrix3x3.h \
+  LinearMath/btQuaternion.h LinearMath/btQuadWord.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  BulletCollision/CollisionDispatch/btCollisionObject.h \
+  LinearMath/btMotionState.h LinearMath/btAlignedObjectArray.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/new \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/unistd.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/posix.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/errno.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/errno.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/exception \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstddef \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stddef.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/type_traits \
+  BulletCollision/CollisionDispatch/btCollisionDispatcher.h \
+  BulletCollision/BroadphaseCollision/btDispatcher.h \
+  BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+  BulletCollision/NarrowPhaseCollision/btManifoldPoint.h \
+  LinearMath/btTransformUtil.h \
+  BulletCollision/CollisionDispatch/btManifoldResult.h \
+  BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h \
+  BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h \
+  BulletCollision/BroadphaseCollision/btBroadphaseProxy.h \
+  BulletCollision/CollisionDispatch/btCollisionCreateFunc.h \
+  BulletCollision/BroadphaseCollision/btOverlappingPairCache.h \
+  BulletCollision/BroadphaseCollision/btBroadphaseInterface.h \
+  BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h \
+  BulletCollision/CollisionShapes/btBoxShape.h \
+  BulletCollision/CollisionShapes/btPolyhedralConvexShape.h \
+  BulletCollision/CollisionShapes/btConvexInternalShape.h \
+  BulletCollision/CollisionShapes/btConvexShape.h \
+  BulletCollision/CollisionShapes/btCollisionShape.h \
+  BulletCollision/CollisionShapes/btCollisionMargin.h \
+  LinearMath/btAabbUtil2.h \
+  BulletCollision/CollisionShapes/btSphereShape.h \
+  BulletCollision/CollisionShapes/btCapsuleShape.h \
+  BulletCollision/CollisionShapes/btCylinderShape.h \
+  BulletCollision/CollisionShapes/btConeShape.h \
+  BulletCollision/CollisionShapes/btStaticPlaneShape.h \
+  BulletCollision/CollisionShapes/btConcaveShape.h \
+  BulletCollision/CollisionShapes/btTriangleCallback.h \
+  BulletCollision/CollisionShapes/btConvexHullShape.h \
+  BulletCollision/CollisionShapes/btTriangleMesh.h \
+  BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h \
+  BulletCollision/CollisionShapes/btStridingMeshInterface.h \
+  BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h \
+  BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h \
+  BulletCollision/CollisionShapes/btTriangleMeshShape.h \
+  BulletCollision/CollisionShapes/btOptimizedBvh.h \
+  BulletCollision/BroadphaseCollision/btQuantizedBvh.h \
+  BulletCollision/CollisionShapes/btTriangleInfoMap.h \
+  LinearMath/btHashMap.h LinearMath/btSerializer.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/memory.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/strings.h \
+  BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h \
+  BulletCollision/CollisionShapes/btCompoundShape.h \
+  BulletCollision/CollisionShapes/btTetrahedronShape.h \
+  BulletCollision/CollisionShapes/btEmptyShape.h \
+  BulletCollision/CollisionShapes/btMultiSphereShape.h \
+  BulletCollision/CollisionShapes/btUniformScalingShape.h \
+  BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h \
+  BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h \
+  BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h \
+  BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h \
+  BulletCollision/CollisionDispatch/btCollisionConfiguration.h \
+  BulletCollision/BroadphaseCollision/btSimpleBroadphase.h \
+  BulletCollision/BroadphaseCollision/btAxisSweep3.h \
+  BulletCollision/BroadphaseCollision/btDbvtBroadphase.h \
+  BulletCollision/BroadphaseCollision/btDbvt.h \
+  BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h \
+  LinearMath/btDefaultMotionState.h LinearMath/btQuickprof.h \
+  LinearMath/btIDebugDraw.h \
+  BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h \
+  BulletDynamics/Dynamics/btDynamicsWorld.h \
+  BulletDynamics/ConstraintSolver/btContactSolverInfo.h \
+  BulletDynamics/Dynamics/btSimpleDynamicsWorld.h \
+  BulletDynamics/Dynamics/btRigidBody.h \
+  BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h \
+  BulletDynamics/ConstraintSolver/btJacobianEntry.h \
+  BulletDynamics/ConstraintSolver/btTypedConstraint.h \
+  BulletDynamics/ConstraintSolver/btSolverConstraint.h \
+  BulletDynamics/ConstraintSolver/btSolverBody.h \
+  BulletDynamics/ConstraintSolver/btHingeConstraint.h \
+  BulletDynamics/ConstraintSolver/btConeTwistConstraint.h \
+  BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h \
+  BulletDynamics/ConstraintSolver/btSliderConstraint.h \
+  BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h \
+  BulletDynamics/ConstraintSolver/btUniversalConstraint.h \
+  BulletDynamics/ConstraintSolver/btHinge2Constraint.h \
+  BulletDynamics/ConstraintSolver/btGearConstraint.h \
+  BulletDynamics/ConstraintSolver/btFixedConstraint.h \
+  BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h \
+  BulletDynamics/ConstraintSolver/btConstraintSolver.h \
+  BulletDynamics/Vehicle/btRaycastVehicle.h \
+  BulletDynamics/Vehicle/btVehicleRaycaster.h \
+  BulletDynamics/Vehicle/btWheelInfo.h \
+  BulletDynamics/Dynamics/btActionInterface.h \
+  BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h \
+  BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h \
+  BulletCollision/CollisionShapes/btTriangleShape.h \
+  BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h \
+  BulletCollision/NarrowPhaseCollision/btPointCollector.h \
+  BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h \
+  BulletCollision/NarrowPhaseCollision/btConvexCast.h \
+  BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h \
+  BulletCollision/NarrowPhaseCollision/btConvexPenetrationDepthSolver.h \
+  BulletCollision/NarrowPhaseCollision/btGjkEpa2.h \
+  BulletCollision/CollisionShapes/btMinkowskiSumShape.h \
+  BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h
+
+Bullet-C-Api.h:
+
+btBulletDynamicsCommon.h:
+
+btBulletCollisionCommon.h:
+
+BulletCollision/CollisionDispatch/btCollisionWorld.h:
+
+LinearMath/btVector3.h:
+
+LinearMath/btScalar.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/math.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/alltypes.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdlib.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/alloca.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/float.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/float.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/assert.h:
+
+LinearMath/btMinMax.h:
+
+LinearMath/btAlignedAllocator.h:
+
+LinearMath/btTransform.h:
+
+LinearMath/btMatrix3x3.h:
+
+LinearMath/btQuaternion.h:
+
+LinearMath/btQuadWord.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+BulletCollision/CollisionDispatch/btCollisionObject.h:
+
+LinearMath/btMotionState.h:
+
+LinearMath/btAlignedObjectArray.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/new:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/unistd.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/posix.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/errno.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/lib/libc/musl/arch/emscripten/bits/errno.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/exception:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/cstddef:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/stddef.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libcxx/type_traits:
+
+BulletCollision/CollisionDispatch/btCollisionDispatcher.h:
+
+BulletCollision/BroadphaseCollision/btDispatcher.h:
+
+BulletCollision/NarrowPhaseCollision/btPersistentManifold.h:
+
+BulletCollision/NarrowPhaseCollision/btManifoldPoint.h:
+
+LinearMath/btTransformUtil.h:
+
+BulletCollision/CollisionDispatch/btManifoldResult.h:
+
+BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h:
+
+BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h:
+
+BulletCollision/BroadphaseCollision/btBroadphaseProxy.h:
+
+BulletCollision/CollisionDispatch/btCollisionCreateFunc.h:
+
+BulletCollision/BroadphaseCollision/btOverlappingPairCache.h:
+
+BulletCollision/BroadphaseCollision/btBroadphaseInterface.h:
+
+BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h:
+
+BulletCollision/CollisionShapes/btBoxShape.h:
+
+BulletCollision/CollisionShapes/btPolyhedralConvexShape.h:
+
+BulletCollision/CollisionShapes/btConvexInternalShape.h:
+
+BulletCollision/CollisionShapes/btConvexShape.h:
+
+BulletCollision/CollisionShapes/btCollisionShape.h:
+
+BulletCollision/CollisionShapes/btCollisionMargin.h:
+
+LinearMath/btAabbUtil2.h:
+
+BulletCollision/CollisionShapes/btSphereShape.h:
+
+BulletCollision/CollisionShapes/btCapsuleShape.h:
+
+BulletCollision/CollisionShapes/btCylinderShape.h:
+
+BulletCollision/CollisionShapes/btConeShape.h:
+
+BulletCollision/CollisionShapes/btStaticPlaneShape.h:
+
+BulletCollision/CollisionShapes/btConcaveShape.h:
+
+BulletCollision/CollisionShapes/btTriangleCallback.h:
+
+BulletCollision/CollisionShapes/btConvexHullShape.h:
+
+BulletCollision/CollisionShapes/btTriangleMesh.h:
+
+BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h:
+
+BulletCollision/CollisionShapes/btStridingMeshInterface.h:
+
+BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h:
+
+BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h:
+
+BulletCollision/CollisionShapes/btTriangleMeshShape.h:
+
+BulletCollision/CollisionShapes/btOptimizedBvh.h:
+
+BulletCollision/BroadphaseCollision/btQuantizedBvh.h:
+
+BulletCollision/CollisionShapes/btTriangleInfoMap.h:
+
+LinearMath/btHashMap.h:
+
+LinearMath/btSerializer.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/memory.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/raid/vugluskr/emsdk_portable/emscripten/master/system/include/libc/strings.h:
+
+BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h:
+
+BulletCollision/CollisionShapes/btCompoundShape.h:
+
+BulletCollision/CollisionShapes/btTetrahedronShape.h:
+
+BulletCollision/CollisionShapes/btEmptyShape.h:
+
+BulletCollision/CollisionShapes/btMultiSphereShape.h:
+
+BulletCollision/CollisionShapes/btUniformScalingShape.h:
+
+BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h:
+
+BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h:
+
+BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h:
+
+BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h:
+
+BulletCollision/CollisionDispatch/btCollisionConfiguration.h:
+
+BulletCollision/BroadphaseCollision/btSimpleBroadphase.h:
+
+BulletCollision/BroadphaseCollision/btAxisSweep3.h:
+
+BulletCollision/BroadphaseCollision/btDbvtBroadphase.h:
+
+BulletCollision/BroadphaseCollision/btDbvt.h:
+
+BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h:
+
+LinearMath/btDefaultMotionState.h:
+
+LinearMath/btQuickprof.h:
+
+LinearMath/btIDebugDraw.h:
+
+BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h:
+
+BulletDynamics/Dynamics/btDynamicsWorld.h:
+
+BulletDynamics/ConstraintSolver/btContactSolverInfo.h:
+
+BulletDynamics/Dynamics/btSimpleDynamicsWorld.h:
+
+BulletDynamics/Dynamics/btRigidBody.h:
+
+BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h:
+
+BulletDynamics/ConstraintSolver/btJacobianEntry.h:
+
+BulletDynamics/ConstraintSolver/btTypedConstraint.h:
+
+BulletDynamics/ConstraintSolver/btSolverConstraint.h:
+
+BulletDynamics/ConstraintSolver/btSolverBody.h:
+
+BulletDynamics/ConstraintSolver/btHingeConstraint.h:
+
+BulletDynamics/ConstraintSolver/btConeTwistConstraint.h:
+
+BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h:
+
+BulletDynamics/ConstraintSolver/btSliderConstraint.h:
+
+BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h:
+
+BulletDynamics/ConstraintSolver/btUniversalConstraint.h:
+
+BulletDynamics/ConstraintSolver/btHinge2Constraint.h:
+
+BulletDynamics/ConstraintSolver/btGearConstraint.h:
+
+BulletDynamics/ConstraintSolver/btFixedConstraint.h:
+
+BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h:
+
+BulletDynamics/ConstraintSolver/btConstraintSolver.h:
+
+BulletDynamics/Vehicle/btRaycastVehicle.h:
+
+BulletDynamics/Vehicle/btVehicleRaycaster.h:
+
+BulletDynamics/Vehicle/btWheelInfo.h:
+
+BulletDynamics/Dynamics/btActionInterface.h:
+
+BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h:
+
+BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h:
+
+BulletCollision/CollisionShapes/btTriangleShape.h:
+
+BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h:
+
+BulletCollision/NarrowPhaseCollision/btPointCollector.h:
+
+BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h:
+
+BulletCollision/NarrowPhaseCollision/btConvexCast.h:
+
+BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h:
+
+BulletCollision/NarrowPhaseCollision/btConvexPenetrationDepthSolver.h:
+
+BulletCollision/NarrowPhaseCollision/btGjkEpa2.h:
+
+BulletCollision/CollisionShapes/btMinkowskiSumShape.h:
+
+BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h:

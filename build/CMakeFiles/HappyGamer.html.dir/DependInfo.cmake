@@ -23,10 +23,9 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../bullet3-2.82/src"
-  "../freetype2/include"
-  "../freetype2/include/freetype"
   "../src/glm"
+  "/usr/local/include"
+  "/usr/include/freetype2"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

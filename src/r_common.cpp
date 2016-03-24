@@ -194,102 +194,24 @@ void r_init_gl(Context& ctx)
 
     glEnable(GL_DEPTH_TEST);
 
+    std::string vnc_fp;
+    std::string vnc_vp;
+
+    std::string vc_fp;
+    std::string vc_vp;
+
+    read_file_content("asset_dir/shaders/vnc.fp", vnc_fp);
+    read_file_content("asset_dir/shaders/vnc.vp", vnc_vp);
+
+    read_file_content("asset_dir/shaders/vc.fp", vc_fp);
+    read_file_content("asset_dir/shaders/vc.vp", vc_vp);
+
 #ifndef __EMSCRIPTEN__
-    string shaders_vnc[2] = {R"(
-attribute vec3 position;
-attribute vec3 normal;
-attribute vec3 color;
-uniform mat4 mvp;
-uniform mat3 n;
-varying vec3 vNormal;
-varying vec3 vColor;
-void main(void) {
-    gl_Position = mvp * vec4(position, 1.0);
-    vNormal = normalize(n * normal);
-    vColor = color;
-}
-)",R"(#version 130
-precision mediump float;
-//uniform sampler2D tex;
-varying vec3 vNormal;
-varying vec3 vColor;
-void main(void)
-{
-    vec3 lightDirEyeSpace = normalize(vec3(1.0,1.0,1.0));
-    vec3 diffuseLight = vec3(max(0.0, dot(lightDirEyeSpace, vNormal)));
-    vec3 ambientLight = vec3(0.3,0.3,0.3);
-    vec3 light = max(diffuseLight, ambientLight);
-    gl_FragColor = vec4( vColor.xyz, 1.0 );
-}
-)"};
-    string shaders_vc[2] = {R"(
-attribute vec3 position;
-attribute vec3 color;
-uniform mat4 mvp;
-uniform mat3 n;
-varying vec3 vColor;
-void main(void) {
-    gl_Position = mvp * vec4(position, 1.0);
-    vColor = color;
-}
-)",R"(#version 130
-precision mediump float;
-varying vec3 vColor;
-void main(void)
-{
-    gl_FragColor = vec4( vColor.xyz, 1.0 );
-}
-)"};
-#else
-    string shaders_vnc[2] = {R"(
-attribute vec3 position;
-attribute vec3 normal;
-attribute vec3 color;
-uniform mat4 mvp;
-uniform mat3 n;
-varying vec3 vNormal;
-varying vec3 vColor;
-void main(void) {
-    gl_Position = mvp * vec4(position, 1.0);
-    vNormal = normalize(n * normal);
-    vColor = color;
-}
-)",R"(#version 130
-precision mediump float;
-//uniform sampler2D tex;
-varying vec3 vNormal;
-varying vec3 vColor;
-void main(void)
-{
-    vec3 lightDirEyeSpace = normalize(vec3(1.0,1.0,1.0));
-    vec3 diffuseLight = vec3(max(0.0, dot(lightDirEyeSpace, vNormal)));
-    vec3 ambientLight = vec3(1.0,0.2,0.2);
-    vec3 light = max(diffuseLight, ambientLight);
-    gl_FragColor = vec4( vColor.xyz, 1.0 );
-}
-)"};
-    string shaders_vc[2] = {R"(
-attribute vec3 position;
-attribute vec3 color;
-uniform mat4 mvp;
-uniform mat3 n;
-varying vec3 vColor;
-void main(void) {
-    gl_Position = mvp * vec4(position, 1.0);
-    vColor = color;
-}
-)",R"(#version 130
-precision mediump float;
-varying vec3 vColor;
-void main(void)
-{
-    gl_FragColor = vec4( vColor.xyz, 1.0 );
-}
-)"};
+
 #endif
 
-    ctx.m_shaderPrograms[eShaderTypes::EST_VNC] = r_build_shader(shaders_vnc[0], shaders_vnc[1]);
-    ctx.m_shaderPrograms[eShaderTypes::EST_VC] = r_build_shader(shaders_vc[0], shaders_vc[1]);
+    ctx.m_shaderPrograms[eShaderTypes::EST_VNC] = r_build_shader(vnc_vp, vnc_fp);
+    ctx.m_shaderPrograms[eShaderTypes::EST_VC]  = r_build_shader(vc_vp, vc_fp);
 
     std::list<eRoomWallPatternType> pallete = {
             eRoomWallPatternType::SIMPLE,
@@ -337,6 +259,8 @@ void main(void)
             eRoomWallPatternType::SIMPLE
     };
 
+
+
     r_room_add_floor(ctx, room, "floor_linoleum_01", vec2(16.0f, 12.0f), vec2(11.0f, 11.0f), vec3(0.0f, 0.0f, 0.0f));
     r_room_add_wall(ctx, room, "wall_wallpaper_01", pallete, eRoomGrowthSide::EAST, 11.0f, vec3(-5.0f, 22.5f, 0.0f));
     r_room_add_wall(ctx, room, "door_wood_01", pallete_door, eRoomGrowthSide::EAST, 11.0f, vec3(-5.0f, 17.0f, 0.0f));
@@ -365,6 +289,7 @@ void main(void)
     t.setIdentity();
     t.setOrigin( btVector3(45.0f, 50.0f, 45.0f) );
     r_room_add_static_object(ctx, room, "asset_dir/refrigerator_old_02_big.qb", t, 4.0f);
+
 
 /*
     PolyVox::Region char_reg(PolyVox::Vector3DInt32(0, 0, 0), PolyVox::Vector3DInt32(100, 1, 100));
@@ -424,7 +349,7 @@ int r_init(int argc, char *argv[])
 
     std::cout << "font library initialized" << std::endl;
 
-    bt_init(g_Context.worldPhysic, vec3(0,-2,0));
+    bt_init(g_Context.worldPhysic, vec3(0,-9.8f,0));
 
     std::cout << "physic library initialized" << std::endl;
 
@@ -471,18 +396,21 @@ void r_draw_opengl_mesh_transform(Context& ctx, const mat4& model, const OpenGLM
             int byteOffset = 0;
 
             GLint vertexLocation = glGetAttribLocation(ctx.shaderProgram, "position");
-            glEnableVertexAttribArray(vertexLocation);
-            glVertexAttribPointer(vertexLocation, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
+        //    printf("eShaderTypes::EST_VNC: vertexLocation = %i\n", vertexLocation);
+            glEnableVertexAttribArray(0);
+            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
 
             GLint normalLocation = glGetAttribLocation(ctx.shaderProgram, "normal");
-            glEnableVertexAttribArray(normalLocation);
+        //    printf("eShaderTypes::EST_VNC: normalLocation = %i\n", normalLocation);
+            glEnableVertexAttribArray(1);
             byteOffset = floatByteSize * positionFloatCount;
-            glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
+            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
 
             GLint colorLocation = glGetAttribLocation(ctx.shaderProgram, "color");
-            glEnableVertexAttribArray(colorLocation);
+        //    printf("eShaderTypes::EST_VNC: colorLocation = %i\n", colorLocation);
+            glEnableVertexAttribArray(2);
             byteOffset = floatByteSize * (positionFloatCount + normalFloatCount);
-            glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
+            glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
 
             glUniformMatrix4fv(ctx.mvpLocation, 1, GL_FALSE,  glm::value_ptr(modelViewProjection));
             glUniformMatrix3fv(ctx.nLocation, 1, GL_FALSE,  glm::value_ptr(normal));
@@ -500,13 +428,15 @@ void r_draw_opengl_mesh_transform(Context& ctx, const mat4& model, const OpenGLM
             int byteOffset = 0;
 
             GLint vertexLocation = glGetAttribLocation(ctx.shaderProgram, "position");
-            glEnableVertexAttribArray(vertexLocation); // Attrib '0' is the vertex positions
-            glVertexAttribPointer(vertexLocation, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
+      //      printf("eShaderTypes::EST_VC: vertexLocation = %i\n", vertexLocation);
+            glEnableVertexAttribArray(0); // Attrib '0' is the vertex positions
+            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
 
             GLint colorLocation = glGetAttribLocation(ctx.shaderProgram, "color");
-            glEnableVertexAttribArray(colorLocation); // Attrib '1' is the vertex normals.
+         //   printf("eShaderTypes::EST_VC: colorLocation = %i\n", colorLocation);
+            glEnableVertexAttribArray(1); // Attrib '1' is the vertex normals.
             byteOffset = floatByteSize * positionFloatCount;
-            glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
+            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, vertexFloatSizeInBytes, (GLvoid*)(byteOffset));
 
             glUniformMatrix4fv(ctx.mvpLocation, 1, GL_FALSE,  glm::value_ptr(modelViewProjection));
             glUniformMatrix3fv(ctx.nLocation, 1, GL_FALSE,  glm::value_ptr(normal));

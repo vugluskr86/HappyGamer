@@ -23,9 +23,9 @@ struct r_cam_arcball
     bool m_viewNeedsUpdate;
 
     r_cam_arcball()
-            : m_theta(0.0f),
-              m_phi(0.0f),
-              m_radius(30.0f),
+            : m_theta(1.0f),
+              m_phi(1.0f),
+              m_radius(180.0f),
               m_up(1.0f),
               m_target(0.0f, 0.0f, 0.0f),
               m_view(),

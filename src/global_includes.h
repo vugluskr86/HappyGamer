@@ -23,6 +23,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <streambuf>
 #include <string>
 #include <vector>
 #include <map>
@@ -43,7 +44,7 @@ using namespace glm;
 
 
 #ifdef __EMSCRIPTEN__
-#include "LinearMath/btVector3.h"
+#include <LinearMath/btVector3.h>
 #include "LinearMath/btAlignedObjectArray.h"
 #include "btBulletDynamicsCommon.h"
 #include "BulletDynamics/MLCPSolvers/btMLCPSolver.h"
@@ -119,5 +120,18 @@ struct voxel
 bool operator==(const voxel& lhs, const voxel& rhs);
 bool operator!=(const voxel& lhs, const voxel& rhs);
 
+template <typename string_type> void read_file_content(const char* path, string_type& dst)
+{
+    std::ifstream t(path);
+
+    t.seekg(0, std::ios::end);
+    dst.reserve(t.tellg());
+    t.seekg(0, std::ios::beg);
+
+    dst.assign((std::istreambuf_iterator<typename string_type::value_type>(t)), std::istreambuf_iterator<typename string_type::value_type>());
+}
+
+//typedef read_file_content<std::string> read_file_content_string;
+//typedef read_file_content<std::wstring> read_file_content_wstring;
 
 #endif //HAPPYGAMER_GLOBAL_INCLUDES_H_H

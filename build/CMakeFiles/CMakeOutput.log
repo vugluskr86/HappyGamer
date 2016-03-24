@@ -65,60 +65,60 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec680902868/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec680902868.dir/build.make CMakeFiles/cmTryCompileExec680902868.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec908696931/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec908696931.dir/build.make CMakeFiles/cmTryCompileExec908696931.dir/build
 make[1]: Entering directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec680902868.dir/testCCompiler.c.o
-/raid/vugluskr/emsdk_portable/emscripten/master/emcc    -o CMakeFiles/cmTryCompileExec680902868.dir/testCCompiler.c.o   -c /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec680902868
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec680902868.dir/link.txt --verbose=1
-/raid/vugluskr/emsdk_portable/emscripten/master/emcc       CMakeFiles/cmTryCompileExec680902868.dir/testCCompiler.c.o  -o cmTryCompileExec680902868  
+Building C object CMakeFiles/cmTryCompileExec908696931.dir/testCCompiler.c.o
+/raid/vugluskr/emsdk_portable/emscripten/master/emcc    -o CMakeFiles/cmTryCompileExec908696931.dir/testCCompiler.c.o   -c /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec908696931
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec908696931.dir/link.txt --verbose=1
+/raid/vugluskr/emsdk_portable/emscripten/master/emcc       CMakeFiles/cmTryCompileExec908696931.dir/testCCompiler.c.o  -o cmTryCompileExec908696931  
 make[1]: Leaving directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec290577828/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec290577828.dir/build.make CMakeFiles/cmTryCompileExec290577828.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2142795742/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2142795742.dir/build.make CMakeFiles/cmTryCompileExec2142795742.dir/build
 make[1]: Entering directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec290577828.dir/CMakeCCompilerABI.c.o
-/raid/vugluskr/emsdk_portable/emscripten/master/emcc    -o CMakeFiles/cmTryCompileExec290577828.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec290577828
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec290577828.dir/link.txt --verbose=1
-/raid/vugluskr/emsdk_portable/emscripten/master/emcc       CMakeFiles/cmTryCompileExec290577828.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec290577828   
+Building C object CMakeFiles/cmTryCompileExec2142795742.dir/CMakeCCompilerABI.c.o
+/raid/vugluskr/emsdk_portable/emscripten/master/emcc    -o CMakeFiles/cmTryCompileExec2142795742.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2142795742
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2142795742.dir/link.txt --verbose=1
+/raid/vugluskr/emsdk_portable/emscripten/master/emcc       CMakeFiles/cmTryCompileExec2142795742.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2142795742   
 make[1]: Leaving directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1367770605/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1367770605.dir/build.make CMakeFiles/cmTryCompileExec1367770605.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1405554576/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1405554576.dir/build.make CMakeFiles/cmTryCompileExec1405554576.dir/build
 make[1]: Entering directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1367770605.dir/testCXXCompiler.cxx.o
-/raid/vugluskr/emsdk_portable/emscripten/master/em++     -o CMakeFiles/cmTryCompileExec1367770605.dir/testCXXCompiler.cxx.o -c /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1367770605
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1367770605.dir/link.txt --verbose=1
-/raid/vugluskr/emsdk_portable/emscripten/master/em++        CMakeFiles/cmTryCompileExec1367770605.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1367770605  
+Building CXX object CMakeFiles/cmTryCompileExec1405554576.dir/testCXXCompiler.cxx.o
+/raid/vugluskr/emsdk_portable/emscripten/master/em++     -o CMakeFiles/cmTryCompileExec1405554576.dir/testCXXCompiler.cxx.o -c /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1405554576
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1405554576.dir/link.txt --verbose=1
+/raid/vugluskr/emsdk_portable/emscripten/master/em++        CMakeFiles/cmTryCompileExec1405554576.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1405554576  
 make[1]: Leaving directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec889327273/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec889327273.dir/build.make CMakeFiles/cmTryCompileExec889327273.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2221723611/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2221723611.dir/build.make CMakeFiles/cmTryCompileExec2221723611.dir/build
 make[1]: Entering directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec889327273.dir/CMakeCXXCompilerABI.cpp.o
-/raid/vugluskr/emsdk_portable/emscripten/master/em++     -o CMakeFiles/cmTryCompileExec889327273.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec889327273
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec889327273.dir/link.txt --verbose=1
-/raid/vugluskr/emsdk_portable/emscripten/master/em++        CMakeFiles/cmTryCompileExec889327273.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec889327273   
+Building CXX object CMakeFiles/cmTryCompileExec2221723611.dir/CMakeCXXCompilerABI.cpp.o
+/raid/vugluskr/emsdk_portable/emscripten/master/em++     -o CMakeFiles/cmTryCompileExec2221723611.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2221723611
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2221723611.dir/link.txt --verbose=1
+/raid/vugluskr/emsdk_portable/emscripten/master/em++        CMakeFiles/cmTryCompileExec2221723611.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2221723611   
 make[1]: Leaving directory `/home/vugluskr/projects/HappyGamer/build/CMakeFiles/CMakeTmp'
 
 

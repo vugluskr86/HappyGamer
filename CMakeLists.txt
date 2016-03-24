@@ -26,8 +26,8 @@ IF(GAME_BUILD_TARGET STREQUAL Web)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
     set(SOURCE_FILES src/r_qb_loader.h src/r_qb_loader.cpp src/mem_pool.h src/MemoryPool.tcc src/global_includes.h src/r_common.h src/r_common.cpp src/r_cam_arcball.h src/r_cam_arcball.cpp  src/main.cpp src/r_room.h src/r_room.cpp src/r_mesh.h src/r_mesh.cpp src/bt_world.h src/bt_world.cpp src/r_debug.h src/r_debug.cpp src/AABB.cpp src/AABB.h src/r_font.cpp src/r_font.h src/global.cpp)
     add_executable(HappyGamer.html ${SOURCE_FILES})
-    set_target_properties(HappyGamer.html PROPERTIES LINK_FLAGS "--embed-file ../asset_dir -O2 -s FULL_ES2=1 -s USE_FREETYPE=1 -s USE_BULLET=1 -s TOTAL_MEMORY=134217728")
-    target_include_directories(HappyGamer.html PUBLIC bullet3-2.82/src freetype2/include freetype2/include/freetype src/glm)
+    set_target_properties(HappyGamer.html PROPERTIES LINK_FLAGS "--embed-file ../asset_dir -O3 -s DEMANGLE_SUPPORT=1 -s FULL_ES2=1 -s USE_FREETYPE=1 -s USE_BULLET=1 -s TOTAL_MEMORY=134217728")
+    target_include_directories(HappyGamer.html PUBLIC src/glm /usr/local/include /usr/include/freetype2)
 
    # em_link_js_library(HappyGamer.html freetype2/builds/unix/a.out.js)
 

@@ -98,23 +98,23 @@ std::shared_ptr<QB_LoadingHandler> load_qb(const char* file)
     for (uint32_t i = 0; i < loader->header.numMatrices; i++)
     {
         read_u8(_file, &nameLength);
-        printf("nameLength: %i\n", nameLength);
+    //    printf("nameLength: %i\n", nameLength);
         fread(&name[0], nameLength, sizeof(uint8_t), _file);
         name[nameLength] = '\0';
 
-        printf("name: %s\n", name);
+   //     printf("name: %s\n", name);
 
         read_u32(_file, &sizeX);
         read_u32(_file, &sizeY);
         read_u32(_file, &sizeZ);
 
-        printf("size: %i %i %i\n", sizeX, sizeY, sizeZ);
+    //    printf("size: %i %i %i\n", sizeX, sizeY, sizeZ);
 
         read_i32(_file, &posX);
         read_i32(_file, &posY);
         read_i32(_file, &posZ);
 
-        printf("pos: %i %i %i\n", posX, posY, posZ);
+  //      printf("pos: %i %i %i\n", posX, posY, posZ);
 
         uint32_t voxelData = 0;
 
@@ -147,12 +147,12 @@ std::shared_ptr<QB_LoadingHandler> load_qb(const char* file)
                         layout->volData.setVoxel(x, y, z, v);
 
                         voxelAABB = CPM_GLM_AABB_NS::AABB(vec3(x, y, z), 0.5f);
-
+/*
                         printf("v: %f %f %f %f %f %f\n",
                                voxelAABB.getMin().x, voxelAABB.getMin().y, voxelAABB.getMin().z,
                                voxelAABB.getMax().x, voxelAABB.getMax().y, voxelAABB.getMax().z
                         );
-
+*/
                         layout->aabb.extend(voxelAABB);
                     }
                 }
@@ -163,12 +163,12 @@ std::shared_ptr<QB_LoadingHandler> load_qb(const char* file)
         loader->layouts.push_back(layout);
         loader->aabb.extend(layout->aabb);
     }
-
+/*
     printf("loader->aabb: %f %f %f %f %f %f\n",
            loader->aabb.getMin().x, loader->aabb.getMin().y, loader->aabb.getMin().z,
            loader->aabb.getMax().x, loader->aabb.getMax().y, loader->aabb.getMax().z
     );
-
+*/
     fclose(_file);
 
     g_Handlesrs[file] = std::move(loader);
